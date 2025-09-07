@@ -1,0 +1,87 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build files
+dist/
+dist-ssr/
+build/
+.next/
+.nuxt/
+
+# Cache directories
+.cache/
+.temp/
+.tmp/
+.vercel
+.netlify
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Vite
+.vite/
+
+# Local development
+*.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Large files
+*.glb
+*.wasm
+*.map
+
+# Media files
+*.mp4
+*.mov
+*.avi
+*.wmv
+*.flv
+*.webm
+
+# Keep public/assets/ but ignore other large files
+!public/assets/**/*
+public/models/*.glb
+public/textures/**/*.png
+public/textures/**/*.jpg
+public/textures/**/*.jpeg
+
+# Git LFS tracking
+.gitattributes
+# Animation files
+*.fbx
+*.fbx
+*.glb
+
+# Large asset files
+public/assets/terminal.png
+public/assets/spotlight*.png
+public/assets/grid*.png
+.DS_Store
