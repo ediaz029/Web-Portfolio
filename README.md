@@ -1,12 +1,29 @@
-# React + Vite
+# Ernesto Diaz - Professional Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive portfolio website built with React, Three.js, and Tailwind CSS. This portfolio showcases my skills, projects, and experience in an immersive 3D environment.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **3D Interactive Environment**: Explore a virtual workspace with interactive 3D elements
+- **Responsive Design**: Fully responsive layout that works on all devices
+- **Modern Tech Stack**: Built with React, Three.js, Tailwind CSS, and Vite
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: 
+  - React
+  - Three.js / @react-three/fiber
+  - Tailwind CSS
+  - Framer Motion
+  - GSAP
+
+- **Development Tools**:
+  - Vite
+
+## Contact
+Name: Ernesto Diaz
+Email: ediazj03@gmail.com
+Portfolio: ernestodiaz.me
+LinkedIn: linkedin.com/in/ernesto-diaz-jr-ba190823a/
+GitHub: github.com/ediaz029
+Feel free to reach out, I'm always open to interesting opportunities and projects.
