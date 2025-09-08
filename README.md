@@ -21,9 +21,10 @@ A modern, interactive portfolio website built with React, Three.js, and Tailwind
   - Vite
 
 ## Contact
-Name: Ernesto Diaz
-Email: ediazj03@gmail.com
-Portfolio: ernestodiaz.me
-LinkedIn: linkedin.com/in/ernesto-diaz-jr-ba190823a/
-GitHub: github.com/ediaz029
+- **Name**: Ernesto Diaz
+- **Email**: ediazj03@gmail.com
+- **Portfolio**: ernestodiaz.me
+- **LinkedIn**: linkedin.com/in/ernesto-diaz-jr-ba190823a/
+- **GitHub**: github.com/ediaz029
+
 Feel free to reach out, I'm always open to interesting opportunities and projects.
