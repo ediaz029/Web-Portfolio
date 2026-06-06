@@ -4,13 +4,24 @@ import {navLinks} from "../constants/index.js";
 const NavItems = () => {
     return (
         <ul className="nav-ul">
-            {navLinks.map(({id, href, name}) => (
-                <li key={id} className="nav-li">
-                    <a href={href} className="nav-li_a" onClick={() => {}}>
-                        {name}
-                    </a>
-                </li>
-            ))}
+            {navLinks.map(({id, href, name}) => {
+                const isExternal = href.startsWith('http');
+                return (
+                    <li key={id} className="nav-li">
+                        <a 
+                            href={href} 
+                            className="nav-li_a" 
+                            onClick={() => {}}
+                            {...(isExternal ? { 
+                                target: "_blank",
+                                rel: "noopener noreferrer"
+                            } : {})}
+                        >
+                            {name}
+                        </a>
+                    </li>
+                );
+            })}
         </ul>
     )
 }

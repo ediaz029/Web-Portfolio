@@ -2,7 +2,7 @@ export const navLinks = [
     {
         id: 1,
         name: 'Home',
-        href: '#home',
+        href: '#hero',
     },
     {
         id: 2,
@@ -11,64 +11,115 @@ export const navLinks = [
     },
     {
         id: 3,
-        name: 'Work',
-        href: '#work',
+        name: 'My Work',
+        href: '#mywork',
     },
     {
         id: 4,
+        name:'Experience',
+        href:'#work',
+    },
+    {
+        id: 5,
         name: 'Contact',
         href: '#contact',
     },
-];
-
-export const clientReviews = [
     {
-        id: 1,
-        name: 'Emily Johnson',
-        position: 'Marketing Director at GreenLeaf',
-        img: 'assets/review1.png',
-        review:
-            'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
-    },
-    {
-        id: 2,
-        name: 'Mark Rogers',
-        position: 'Founder of TechGear Shop',
-        img: 'assets/review2.png',
-        review:
-            'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
-    },
-    {
-        id: 3,
-        name: 'John Dohsas',
-        position: 'Project Manager at UrbanTech ',
-        img: 'assets/review3.png',
-        review:
-            'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
-    },
-    {
-        id: 4,
-        name: 'Ether Smith',
-        position: 'CEO of BrightStar Enterprises',
-        img: 'assets/review4.png',
-        review:
-            'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
-    },
+        id: 6,
+        name: 'Resume',
+        href: 'https://drive.google.com/file/d/1BsXm0aZNkBAADM_iaHoB3i7SOQUMBSql/view?usp=sharing',
+    }
 ];
 
 export const myProjects = [
     {
-        title: 'Podcastr - AI Podcast Platform',
-        desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+        title: 'LVing - Vulnerability Detection Framework',
+        desc: 'A comprehensive static analysis tool built for identifying memory safety and concurrency vulnerabilities in programming languages leveraging the LLVM compiler framework, with a particular interest in the Rust language, through graph-based visualization and analysis. This tool constructs Code Property Graphs (CPGs) from LLVM Intermediate Representation, enabling systematic analysis of low-level memory operations and vulnerability patterns.',
         subdesc:
-            'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-        href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
-        texture: '/textures/project/project1.mp4',
-        logo: '/assets/project-logo1.png',
+            'Built on the Fraunhofer Institute\'s CPG library, LVing provides a scalable platform for automated vulnerability detection and interactive program exploration via Neo4j graph visualization.',
+        href: 'https://www.youtube.com/watch?v=UDjsMJq9QBg&t=41s',
+        texture: '/textures/project/project_lving.mp4',
+        logo: '/assets/neo4j.svg',
+        logoStyle: {
+            backgroundColor: '#13202F',
+            border: '0.2px solid #17293E',
+            boxShadow: '0px 0px 60px 0px #2F6DB54D',
+        },
+        spotlight: '/assets/spotlight4.png',
+        tags: [
+            {
+                id: 1,
+                name: 'Python',
+                path: '/assets/python.svg',
+            },
+            {
+                id: 2,
+                name: 'Neo4j',
+                path: 'assets/neo4j.svg',
+            },
+            {
+                id: 3,
+                name: 'llvm',
+                path: '/assets/llvm.svg',
+            },
+            {
+                id: 4,
+                name: 'rust',
+                path: '/assets/rust.svg',
+            },
+        ],
+    },
+    {
+        title: 'VulGPT - Vulnerability Intelligence Platform',
+        desc: 'A high-performance vulnerability detection platform built with Python FastAPI microservices architecture and Neo4j graph database, processing 500K+ vulnerability records across 30+ software ecosystems. The system leverages OR-Tools CP-SAT optimization algorithms to compute minimal hitting sets for dependency vulnerability mitigation, delivered through a responsive Vue.js/Vite frontend dashboard with real-time package ecosystem monitoring.',
+        subdesc:
+            'VulGPT automates complex vulnerability management, enabling developers to instantly identify optimal security configurations and minimize risk across dependency trees. This platform transforms time-intensive manual security assessments into automated, data-driven decision making for modern development workflows.',
+        href: 'https://github.com/ediaz029/Senior-Project-REPO',
+        texture: '/textures/project/vulgpt.mp4',
+        logo: '/assets/osv.svg',
         logoStyle: {
             backgroundColor: '#2A1816',
             border: '0.2px solid #36201D',
             boxShadow: '0px 0px 60px 0px #AA3C304D',
+        },
+        spotlight: '/assets/spotlight1.png',
+        tags: [
+            {
+                id: 1,
+                name: 'Python',
+                path: '/assets/python.svg',
+            },
+            {
+                id: 2,
+                name: 'Vue.js',
+                path: 'assets/vue.svg',
+            },
+            {
+                id: 3,
+                name: 'Neo4j',
+                path: '/assets/neo4j.svg',
+            },
+            {
+                id: 4,
+                name: 'Docker',
+                path: '/assets/docker.svg',
+            },
+        ],
+    },
+    {
+        title: 'Burgers N\' Chill - Restaurant E-Commerce Platform',
+        desc: 'A full-stack restaurant web application built with React/Next.js framework and MongoDB database, featuring comprehensive online ordering capabilities, admin management panels, and integrated payment processing. The platform leverages JavaScript with modern technologies including PayPal integration, Cloudinary image hosting, and Redux state management, demonstrating expertise in e-commerce development, API routing, and secure authentication systems through cookie-based authorization.',
+        subdesc:
+            'By implementing secure payment processing, dynamic inventory management, and role-based access control, this platform demonstrates the practical application of modern web technologies to solve genuine industry challenges that drive revenue and enhance customer experience.',
+        href: 'https://github.com/ediaz029/Web_Dev_Project-Restaurant',
+        texture: '/textures/project/burgersnchill.mp4',
+        logo: '/assets/logo.png',
+        logoStyle: {
+            backgroundColor: '#654321',
+            background:
+                'linear-gradient(0deg, rgba(101, 67, 33, 0.5), rgba(101, 67, 33, 0.5)), linear-gradient(180deg, rgba(139, 99, 66, 0.9) 0%, rgba(101, 67, 33, 0.8) 100%)',
+            border: '0.2px solid rgba(139, 99, 66, 1)',
+            boxShadow: '0px 0px 60px 0px rgba(101, 67, 33, 0.4)',
         },
         spotlight: '/assets/spotlight1.png',
         tags: [
@@ -79,105 +130,29 @@ export const myProjects = [
             },
             {
                 id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
+                name: 'JavaScript',
+                path: 'assets/js.svg',
             },
             {
                 id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
+                name: 'MongoDB',
+                path: '/assets/mongodb.svg',
             },
             {
                 id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'Node.js',
+                path: '/assets/nodejs.svg',
             },
         ],
     },
     {
-        title: 'LiveDoc - Real-Time Google Docs Clone',
-        desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+        title: 'HeartBeats - Fitness Music Synchronization App',
+        desc: 'An innovative iOS fitness application built with Swift and Core Audio framework, featuring a real-time heartbeat simulation and dynamic music tempo adjustment capabilities. The app leverages advanced iOS audio processing APIs to seamlessly synchronize workout music playback with heartbeat rhythms.',
         subdesc:
-            'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-        href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-        texture: '/textures/project/project2.mp4',
-        logo: '/assets/project-logo2.png',
-        logoStyle: {
-            backgroundColor: '#13202F',
-            border: '0.2px solid #17293E',
-            boxShadow: '0px 0px 60px 0px #2F6DB54D',
-        },
-        spotlight: '/assets/spotlight2.png',
-        tags: [
-            {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
-            },
-            {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
-            },
-            {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
-            },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
-            },
-        ],
-    },
-    {
-        title: 'CarePulse - Health Management System',
-        desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
-        subdesc:
-            'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-        href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-        texture: '/textures/project/project3.mp4',
-        logo: '/assets/project-logo3.png',
-        logoStyle: {
-            backgroundColor: '#60f5a1',
-            background:
-                'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-            border: '0.2px solid rgba(208, 213, 221, 1)',
-            boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
-        },
-        spotlight: '/assets/spotlight3.png',
-        tags: [
-            {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
-            },
-            {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
-            },
-            {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
-            },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
-            },
-        ],
-    },
-    {
-        title: 'Horizon - Online Banking Platform',
-        desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
-        subdesc:
-            'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-        href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-        texture: '/textures/project/project4.mp4',
-        logo: '/assets/project-logo4.png',
+            'This project addresses the growing intersection of fitness technology and personalized user experiences, showcasing the ability to create immersive applications that enhance human performance through innovative audio-visual synchronization. ',
+        href: 'https://github.com/ediaz029/HeartBeatss38',
+        texture: '/textures/project/heartbeats.mp4',
+        logo: '/assets/iOS.svg',
         logoStyle: {
             backgroundColor: '#0E1F38',
             border: '0.2px solid #0E2D58',
@@ -187,63 +162,63 @@ export const myProjects = [
         tags: [
             {
                 id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
+                name: 'Swift',
+                path: '/assets/swift.svg',
             },
             {
                 id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
+                name: 'iOS',
+                path: 'assets/iOS.svg',
             },
             {
                 id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
+                name: 'Core Audio',
+                path: '/assets/coreaudio.svg',
             },
             {
                 id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
+                name: 'XCode',
+                path: '/assets/xcode.svg',
             },
         ],
-    },
-    {
-        title: 'Imaginify - AI Photo Manipulation App',
-        desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-        subdesc:
-            'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-        href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-        texture: '/textures/project/project5.mp4',
-        logo: '/assets/project-logo5.png',
-        logoStyle: {
-            backgroundColor: '#1C1A43',
-            border: '0.2px solid #252262',
-            boxShadow: '0px 0px 60px 0px #635BFF4D',
-        },
-        spotlight: '/assets/spotlight5.png',
-        tags: [
-            {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
-            },
-            {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
-            },
-            {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
-            },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
-            },
-        ],
-    },
+    }
+    // {
+    //     title: 'Imaginify - AI Photo Manipulation App',
+    //     desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
+    //     subdesc:
+    //         'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
+    //     href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
+    //     texture: '/textures/project/project5.mp4',
+    //     logo: '/assets/project-logo5.png',
+    //     logoStyle: {
+    //         backgroundColor: '#1C1A43',
+    //         border: '0.2px solid #252262',
+    //         boxShadow: '0px 0px 60px 0px #635BFF4D',
+    //     },
+    //     spotlight: '/assets/spotlight5.png',
+    //     tags: [
+    //         {
+    //             id: 1,
+    //             name: 'React.js',
+    //             path: '/assets/react.svg',
+    //         },
+    //         {
+    //             id: 2,
+    //             name: 'TailwindCSS',
+    //             path: 'assets/tailwindcss.png',
+    //         },
+    //         {
+    //             id: 3,
+    //             name: 'TypeScript',
+    //             path: '/assets/typescript.png',
+    //         },
+    //         {
+    //             id: 4,
+    //             name: 'Framer Motion',
+    //             path: '/assets/framer.png',
+    //         },
+    //     ],
+    // },
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
@@ -260,29 +235,38 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
     {
         id: 1,
-        name: 'Framer',
-        pos: 'Lead Web Developer',
-        duration: '2022 - Present',
-        title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-        icon: '/assets/framer.svg',
-        animation: 'victory',
+        name: 'Frost Bank',
+        pos: 'AI Engineer I',
+        duration: 'Nov 2025 - present',
+        title: "Develop and deploy AI-powered solutions for enterprise banking systems. Build intelligent applications leveraging LLMs, prompt engineering, and RAG systems to enhance operational efficiency in SDLC and customer experience across digital banking platforms.",
+        icon: '/assets/frostlogo.svg',
+        animation: 'rallying',
     },
     {
         id: 2,
-        name: 'Figma',
-        pos: 'Web Developer',
-        duration: '2020 - 2022',
-        title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-        icon: '/assets/figma.svg',
-        animation: 'clapping',
+        name: 'Texas A&M University-San Antonio',
+        pos: 'CAHSI Google Institution Student Researcher',
+        duration: 'Sep 2024 - May 2025',
+        title: "Led security vulnerability research in concurrent software systems through the Google CAHSI IRP program. Developed LVing, a Neo4j-based static analysis tool leveraging LLVM IR and Code Property Graphs to visualize concurrency vulnerabilities, hosted on Google Cloud Platform.",
+        icon: '/assets/cahsi.svg',
+        animation: 'victory',
     },
     {
         id: 3,
-        name: 'Notion',
-        pos: 'Junior Web Developer',
-        duration: '2019 - 2020',
-        title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-        icon: '/assets/notion.svg',
+        name: 'Texas A&M University-San Antonio',
+        pos: 'NSF SmartSAT Project Research Assistant',
+        duration: 'Jun 2024 - Sep 2024',
+        title: "Led research on advanced static code analysis targeting vulnerability detection methodologies aligned with DevSecOps and shift-left approaches. Utilized Joern's CPG taint-flow visualization to invalidate false positives from popular static code analysis tools, achieving 72.7% efficiency and 77.3% accuracy improvements in vulnerability detection while significantly reducing analyst validation time.",
+        icon: '/assets/nsf.svg',
+        animation: 'clapping',
+    },
+    {
+        id: 4,
+        name: 'Texas A&M University-San Antonio',
+        pos: 'Student Tutor',
+        duration: 'Jan 2022 - May 2023',
+        title: " Strengthened technical communication and documentation skills by helping students articulate complex ideas clearly and logically, experience that directly translates to writing clean code documentation, security reports, and collaborating effectively in development teams.",
+        icon: '/assets/tamusa_logo3.svg',
         animation: 'salute',
     },
 ];

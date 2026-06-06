@@ -16,26 +16,26 @@ const About = () => {
     }
 
     return (
-        <section className="c-space my-20">
+        <section className="c-space my-20" id="about">
             <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
                 <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container">
-                        <img src="/assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
+                        <img src="/assets/2.svg" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
 
                         <div>
                             <p className="grid-headtext">Hi, I'm Ernesto</p>
-                            <p className="grid-subtext">With over 3 years of experience, I have honed my skills through cybersecurity research and full-stack development, with a focus on security tooling and web/mobile application ecosystems.</p>
+                            <p className="grid-subtext">A software engineer with 4+ years building across AI, cybersecurity, and full-stack ecosystems. From research-driven vulnerability detection tools to production web and mobile applications, I create technical solutions that bridge security, intelligence, and user experience.</p>
                         </div>
                     </div>
                 </div>
 
                     <div className="col-span-1 xl:row-span-3">
         <div className="grid-container">
-            <img src="/assets/grid2.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
+            <img src="/assets/tech_stack3.svg" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
 
             <div>
                 <p className="grid-headtext">Tech Stack</p>
-                <p className="grid-subtext">I specialize in Python, Java and Rust, with a focus on cybersecurity research and secure software development ecosystems.</p>
+                <p className="grid-subtext">I specialize in Python, Java, and Rust, building AI/ML engineering solutions, full-stack web and mobile applications, and security research tools.</p>
             </div>
         </div>
                     </div>
@@ -67,7 +67,9 @@ const About = () => {
                                 <p className="grid-subtext">
                                     I'm based in San Antonio, TX, with remote work available.
                                 </p>
-                                <Button name="Contact Me" isBeam containerClass="w-full mt-10"/>
+                                <a href="#contact" className="w-full mt-10 block">
+                                    <Button name="Contact Me" isBeam containerClass="w-full"/>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -75,8 +77,8 @@ const About = () => {
                         <div className="grid-container">
                             <img src="/assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
                             <div>
-                                <p className="grid-headtext">My passion for Coding & Cybersecurity</p>
-                                <p className="grid-subtext">I'm driven by the challenge of uncovering hidden vulnerabilities and building tools that make software safer. Through research and development, I transform complex security problems into innovative solutions that protect digital ecosystems.</p>
+                                <p className="grid-headtext">My passion for Coding</p>
+                                <p className="grid-subtext">I find my flow solving complex problems across AI, security, and full-stack development. Whether I'm building intelligent systems, uncovering vulnerabilities, or creating seamless applications, I turn technical challenges into solutions that actually make a difference.</p>
                             </div>
                         </div>
                     </div>
